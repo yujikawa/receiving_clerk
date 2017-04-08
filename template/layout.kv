@@ -1,0 +1,18 @@
+<MyLayout>
+    canvas.before:
+        Color:
+            rgba: 255, 255, 255, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Button:
+        id: myButton
+        text:'PUSH'
+        size: 300, 300
+        size_hint: 1, 1
+        on_press: root.callback()
+        Image:
+            source: "template/yobirin.jpg"
+            size:300,300
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
